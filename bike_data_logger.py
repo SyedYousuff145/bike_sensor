@@ -35,7 +35,7 @@ def log_data(xbee):
   log_file_p = open(filename+'_P', 'w')
   log_file_p.write('Time,Piezo')
   log_file_m = open(filename+'_M', 'w')
-  log_file_m.write('Time,Ax,Ay,Az,Gx,Gy,Gz')
+  log_file_m.write('Time,Ax,Ay,Az,Gx,Gy,Gz\n')
   log_file_g = open(filename+'_G', 'w')
 
   while True and not stop_reading:
