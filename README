@@ -1,0 +1,11 @@
+This repository contains
+1. Python script (bike_data_logger.py) to log data from the motion sensor to a Raspberry Pi.
+        Logging begins automatically when Pi reboots.
+2. Runtime Logs are timestamped and stored in Logs repository for debugging
+3. Collected data is stored in bike_data_logs directory.
+4. Script to stop logging process (stop.sh)
+        Run ./stop.sh from the current directory
+5. Script to manually start the logging process
+        Run ./start.sh from the current direcory
+6. Script to sync the logs to a remote Git repository
+        Run ./sync.sh from the current directory.

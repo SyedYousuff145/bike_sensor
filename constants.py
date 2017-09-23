@@ -1,0 +1,6 @@
+XBEE_SERIAL_NUMBER = 'A9JDMWB7'
+XBEE_BRIDGE_DESCRIPTION = 'FT232R USB UART'
+
+PROJECT_DIR = '/home/pi/bike_sensor/'
+DATA_DIR = PROJECT_DIR + 'bike_data_logs/'
+LOG_DIR = PROJECT_DIR + 'Logs/'
