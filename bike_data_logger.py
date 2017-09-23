@@ -33,7 +33,7 @@ def discover():
 def log_data(xbee):
   filename = DATA_DIR + time.asctime().replace(' ', '_')
   log_file_p = open(filename+'_P', 'w')
-  log_file_p.write('Time,Piezo')
+  log_file_p.write('Time,Piezo\n')
   log_file_m = open(filename+'_M', 'w')
   log_file_m.write('Time,Ax,Ay,Az,Gx,Gy,Gz\n')
   log_file_g = open(filename+'_G', 'w')
