@@ -46,7 +46,7 @@ def log_data(xbee):
       data = line.split(',')
       l =  len(data)
       # ts = str(time.time())+','
-      ts = str(datetime.datetime.now())
+      ts = str(datetime.datetime.now()) + ','
       if l == 2:
         log_file_p.write(ts+line[2:])
       elif l == 7:
