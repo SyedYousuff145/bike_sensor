@@ -1,5 +1,5 @@
 from read_serial import ReadSerial
-import time, sys, signal
+import datetime, time, sys, signal
 from constants import *
 
 prog_logs_dir = LOG_DIR
@@ -45,7 +45,8 @@ def log_data(xbee):
         continue
       data = line.split(',')
       l =  len(data)
-      ts = str(time.time())+','
+      # ts = str(time.time())+','
+      ts = str(datetime.datetime.now())
       if l == 2:
         log_file_p.write(ts+line[2:])
       elif l == 7:
@@ -57,7 +58,7 @@ def log_data(xbee):
       # print "Xbee adapter disconnected"
       prog_log_file.write("Xbee adapter disconnected")
       log_file_p.close()
-      log_file_g.close()
+      log_file_m.close()
       log_file_g.close()
       return
 
