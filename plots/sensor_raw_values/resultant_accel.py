@@ -1,8 +1,8 @@
 import math
 
 dir = '/Users/syesmohammed.yousuff/Work/bike_sensor/plots/sensor_raw_values/'
-input_file = 'Dominor_raw'
-output_file = 'Dominor_resultant_accel'
+input_file = 'Bullet_raw'
+output_file = 'Bullet_resultant_accel'
 
 f_input = open(dir+input_file, 'r')
 f_output = open(dir+output_file, 'w')
